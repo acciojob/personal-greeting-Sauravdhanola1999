@@ -12,7 +12,7 @@ const Greeting = () => {
         placeholder="Enter your name"
         onChange={(e) => setName(e.target.value)}
       />
-      {name && <h2>"Hello, {name}!</h2>}
+      <p>{name.length ? `Hello ${name} !` : ""} </p>
     </div>
   );
 };
